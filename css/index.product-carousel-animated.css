@@ -1,0 +1,56 @@
+.products-carousel-animated__container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.products-carousel-animated {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.products-carousel-animated__slide {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+}
+
+.products-carousel-animated__slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .products-carousel-animated__slide {
+    flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .products-carousel-animated__slide {
+    flex: 0 0 33.3333%;
+  }
+}
+
+.products-carousel-animated__controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.products-carousel-animated__control {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}

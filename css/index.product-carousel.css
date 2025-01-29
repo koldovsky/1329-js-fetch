@@ -1,0 +1,11 @@
+.product-carousel {
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+}
+
+.product-carousel__slides-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    min-height: 300px;
+}
