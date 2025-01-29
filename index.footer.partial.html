@@ -1,8 +1,12 @@
 <footer id="contacts" class="footer container">
     <h2>Contact <span class="ui-brand">Us</span></h2>
-    <form action="" class="footer__contacts">
-        <input type="text" name="name" placeholder="name" />
-        <input type="email" name="email" placeholder="email" />
-        <button class="button button-card">Submit</button>
+    <form method="POST" id="contact-form">
+        <input type="hidden" name="access_key" value="e17e5f9c-9ca0-4652-aa8c-b912c423c706">
+        <input type="text" name="name" required>
+        <input type="email" name="email" required>
+        <textarea name="message" required></textarea>
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        <button type="submit">Submit Form</button>
+        <div id="contact-form-result"></div>
     </form>
 </footer>
